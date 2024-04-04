@@ -37,4 +37,7 @@ def create_app():
     
     # To create the tables schemas in the database:
     # migrate application models
-    with app.app
+    with app.app_context():
+        db.create_all()
+    
+    return app
