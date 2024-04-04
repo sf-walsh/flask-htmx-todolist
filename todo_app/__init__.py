@@ -6,7 +6,7 @@ import os
 db = SQLAlchemy()
 
 user = os.environ.get("POSTGRES_USER")
-pw = os.environ.get('POSTGRES_PASSWORD')
+pw = os.environ.get("POSTGRES_PASSWORD")
 host = os.environ.get("POSTGRES_HOST")
 db_name = os.environ.get("POSTGRES_DATABASE_NAME")
 DB_URL = f"postgresql+psycopg2://{user}:{pw}@{host}/{db_name}"
